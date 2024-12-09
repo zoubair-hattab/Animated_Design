@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,900;1,14..32,900&family=League+Gothic&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .text-outline {
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+  }
+}
+@layer components {
+  .btn-primary {
+    @apply text-white  bg-gradient-to-r from-[#a3d921] to-[#036425] hover:bg-gradient-to-l hover:from-[#a3d921] hover:to-[#036425] focus:ring-0  font-medium rounded-full text-sm px-5 py-3;
+  }
+}
+@layer utilities {
+  .footer-link {
+    @apply hover:underline  hover:text-darkGreen ml-2 transition-all duration-700;
+  }
+}
